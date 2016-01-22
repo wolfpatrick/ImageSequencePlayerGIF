@@ -1,0 +1,38 @@
+﻿Build started 20-Jan-16 11:18:11 AM.
+     1>Project "E:\WorkspaceVS2013\ImageSequencePlayerGif\build\SequencePlayerGIF.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         setlocal
+         cd E:\WorkspaceVS2013\ImageSequencePlayerGIF\build
+         if %errorlevel% neq 0 goto :cmEnd
+         E:
+         if %errorlevel% neq 0 goto :cmEnd
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen E:/WorkspaceVS2013/ImageSequencePlayerGIF/build/CMakeFiles/SequencePlayerGIF_automoc.dir/ Debug
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IE:\Qt\Qt5.5.1\5.5\msvc2013_64\include /IE:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets /IE:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui /IE:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore /I"E:\Qt\Qt5.5.1\5.5\msvc2013_64\.\mkspecs\win32-msvc2013" /IE:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtXml /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D QT_XML_LIB /D QT_CORE_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"SequencePlayerGIF.dir\Debug\\" /Fd"SequencePlayerGIF.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt E:\WorkspaceVS2013\ImageSequencePlayerGIF\scr\Player.cpp E:\WorkspaceVS2013\ImageSequencePlayerGIF\scr\main.cpp
+         Player.cpp
+         main.cpp
+         Generating Code...
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\WorkspaceVS2013\ImageSequencePlayerGIF\build\Debug\SequencePlayerGIF.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib E:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\qtmaind.lib E:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Widgetsd.lib E:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Xmld.lib E:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Guid.lib E:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Cored.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/WorkspaceVS2013/ImageSequencePlayerGIF/build/Debug/SequencePlayerGIF.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/WorkspaceVS2013/ImageSequencePlayerGIF/build/Debug/SequencePlayerGIF.lib" /MACHINE:X64  /machine:x64 /debug SequencePlayerGIF.dir\Debug\CameraViewSettings.obj
+         SequencePlayerGIF.dir\Debug\ChangeCameraPositonControls.obj
+         SequencePlayerGIF.dir\Debug\LoadVideoUtils.obj
+         SequencePlayerGIF.dir\Debug\main.obj
+         SequencePlayerGIF.dir\Debug\Player.obj
+         SequencePlayerGIF.dir\Debug\PlayerControls.obj
+         SequencePlayerGIF.dir\Debug\SequenceView.obj
+         SequencePlayerGIF.dir\Debug\XmlFileReader.obj
+         SequencePlayerGIF.dir\Debug\SequencePlayerGIF_automoc.obj
+         SequencePlayerGIF.vcxproj -> E:\WorkspaceVS2013\ImageSequencePlayerGIF\build\Debug\SequencePlayerGIF.exe
+     1>Done Building Project "E:\WorkspaceVS2013\ImageSequencePlayerGif\build\SequencePlayerGIF.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.60
